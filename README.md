@@ -1,3 +1,6 @@
+Certainly! Here's the converted markdown suitable for GitHub README:
+
+```markdown
 # Smart WP Plugin WordPress Plugin Boilerplate DevOps Documentation
 
 ## Table of Contents
@@ -65,12 +68,17 @@ The project uses Composer for dependency management. The `composer.json` file co
 
 ```bash
 composer install
+```
 
-
-
-Composer Dependencies
+### Composer Dependencies
 
 Following is the list of Dependencies/Packages provided:
-Dependency	Version	Description
-divineomega/dotenv-loader	Latest Version	The dotenv-loader is a simple PHP helper that automatically loads in a .env file from the root of your project into environment variables. It is designed for use in projects that do not already make use of a .env file.
-rakit/validation	Version	Rakit Validation - PHP Standalone Validation Library. Inspired by Illuminate\Validation Laravel.
+
+| Dependency                    | Version | Description                                                                                                  |
+| ------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------ |
+| divineomega/dotenv-loader      | [![Latest Version](https://img.shields.io/github/v/release/DivineOmega/dotenv-loader?label=Latest)](https://github.com/DivineOmega/dotenv-loader/releases/tag/v2.0.3)      | The dotenv-loader is a simple PHP helper that automatically loads in a .env file from the root of your project into environment variables. It is designed for use in projects that do not already make use of a .env file. |
+| rakit/validation          | [![Version](https://img.shields.io/github/v/release/rakit/validation?label=Latest&color=blue&style=flat-square)](https://github.com/rakit/validation/releases/tag/v1.0.0) | Rakit Validation - PHP Standalone Validation Library. Inspired by Illuminate\Validation Laravel.  |
+```
+
+Please replace the `[![Latest Version](...)](...)` and `[![Version](...)](...)` badges with the actual badge URLs from the respective repositories.
+```
