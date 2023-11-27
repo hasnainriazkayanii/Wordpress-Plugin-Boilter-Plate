@@ -1,10 +1,11 @@
+```markdown
 # Table of Contents
 
-1. [Introduction](https://oracularis.visualstudio.com/OIS%20Apps/_wiki/wikis/OIS-Apps.wiki/644/?wikiVersion=GBwikiMaster&_a=edit&pagePath=/Smart%20WP%20Plugin%20%252D%20Documentation&anchor=introduction)
-2. [Directory Structure](https://oracularis.visualstudio.com/OIS%20Apps/_wiki/wikis/OIS-Apps.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=/Smart%20WP%20Plugin%20%252D%20Documentation&pageId=644&anchor=directory-structure)
-3. [Dependencies](https://oracularis.visualstudio.com/OIS%20Apps/_wiki/wikis/OIS-Apps.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=/Smart%20WP%20Plugin%20%252D%20Documentation&pageId=644&anchor=dependencies)
+1. [Introduction](#introduction)
+2. [Directory Structure](#directory-structure)
+3. [Dependencies](#dependencies)
 
-# Introduction
+## Introduction
 
 Welcome to the DevOps documentation for the Smart WP Plugin WordPress Plugin Boilerplate. This comprehensive guide is designed to empower developers with the necessary insights into the project's architecture, dependencies, and deployment procedures.
 
@@ -12,76 +13,13 @@ Our WordPress Plugin Boilerplate serves as a robust foundation, offering a preco
 
 Let's dive in and explore the key aspects of the Smart WP Plugin WordPress Plugin Boilerplate.
 
-# Directory Structure
+## Directory Structure
 
 The project follows a modular directory structure for better organization. Here is an overview:
-# Smart WP Plugin Directory Structure
 
-## app
-- Constants
-- Controllers
-  - Admin
-  - Api
-  - Front
-    - Auth
-- Core
-- DB
-  - Seeder
-  - Tables
-    - GlobalSetting
-- Exceptions
-- Helpers
-- Hooks
-  - Admin
-    - Menu
-  - Api
-- Models
-- Repositories
-- Requests
-  - Admin
-    - Settings
-  - Emails
-- Traits
+### Smart WP Plugin Directory Structure
 
-## assets
-- css
-  - admin
-- images
-- js
-  - admin
-    - setting
-  - short-codes
-    - dashboard
-- scss
-  - abstracts
-  - admin
-  - base
-  - components
-  - front
-    - short-codes
-  - layouts
-  - vendor
-
-## templates
-
-## vendor
-
-## views
-- admin
-  - settings
-- global
-  - email_templates
-    - auth
-      - layout
-  - partials
-    - alerts
-    - errors
-    - variables
-- public
-  - pages
-    - stylist
-
-# 1. `app/`
+#### 1. `app/`
 
 - **Purpose:** Contains the core application logic.
 
@@ -98,7 +36,7 @@ The project follows a modular directory structure for better organization. Here 
   - `Requests/`: Handle HTTP requests, organized by context, e.g., `Admin/`, `Emails/`.
   - `Traits/`: Store reusable traits.
 
-# 2. `assets/`
+#### 2. `assets/`
 
 - **Purpose:** Contains static assets like CSS, images, and JavaScript.
 
@@ -111,36 +49,40 @@ The project follows a modular directory structure for better organization. Here 
   - `scss/`: Store SCSS files for styles.
     - Organize based on the context, e.g., `abstracts/`, `admin/`, `front/short-codes/`.
 
-# 3. `templates/`
+#### 3. `templates/`
 
 - **Purpose:** Holds WordPress custom page template files.
 
-# 4. `vendor/`
+#### 4. `vendor/`
 
 - **Purpose:** Managed by Composer, contains project dependencies.
 
 - **Subdirectories:**
   - Organized by the vendor name, e.g., `divineomega/`, `rakit/`, `symfony/`.
 
-# 5. `views/`
+#### 5. `views/`
 
 - **Purpose:** Contains Blade templates for views.
 
 - **Subdirectories:**
   - Organized by the context, e.g., `admin/settings/`, `global/email_templates/auth/`.
 
-# Dependencies
+## Dependencies
 
 The project uses Composer for dependency management. The `composer.json` file contains the necessary information about the project dependencies. To install the dependencies, run:
 
-`composer install`
+```bash
+composer install
+```
 
-## Composer Dependencies
+### Composer Dependencies
 
 Following is the list of Dependencies/Packages provided:
 
 | Dependency                    | Version | Description                                                                                                  |
 | ------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------ |
-| divineomega/dotenv-loader      |   [![Latest Version](https://img.shields.io/github/v/release/DivineOmega/dotenv-loader?label=Latest)](https://github.com/DivineOmega/dotenv-loader/releases/tag/v2.0.3)      | The dotenv-loader is a simple PHP helper that automatically loads in a .env file from the root of your project into environment variables. It is designed for use in projects that do not already make use of a .env file. |
-| rakit/validation          | [![Version](https://img.shields.io/github/v/release/rakit/validation?label=Latest&color=blue&style=flat-square)](https://github.com/rakit/validation/releases/tag/v1.0.0) | Rakit Validation - PHP Standalone Validation Library. Inspired by Illuminate\Validation Laravel.  |
+| [divineomega/dotenv-loader](https://github.com/DivineOmega/dotenv-loader) | [![Latest Version](https://img.shields.io/github/v/release/DivineOmega/dotenv-loader?label=Latest)](https://github.com/DivineOmega/dotenv-loader/releases/tag/v2.0.3)      | The dotenv-loader is a simple PHP helper that automatically loads in a .env file from the root of your project into environment variables. It is designed for use in projects that do not already make use of a .env file. |
+| [rakit/validation](https://github.com/rakit/validation) | [![Version](https://img.shields.io/github/v/release/rakit/validation?label=Latest&color=blue&style=flat-square)](https://github.com/rakit/validation/releases/tag/v1.0.0) | Rakit Validation - PHP Standalone Validation Library. Inspired by Illuminate\Validation Laravel.  |
+```
 
+This modified markdown is GitHub-friendly and provides a more seamless experience for users reading the README on GitHub.
