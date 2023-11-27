@@ -1,0 +1,30 @@
+/* 
+This file is used to contain all extend element styles scss. Other elements can extend these styles for reuseable styles.
+*/ 
+
+// this is used in employee dashboard 
+
+.employee-dashboard-section{
+
+    .dashboard-card-text{
+        text-align: left;
+        opacity: 1;
+    }
+    
+}
+
+// this is used all form element
+.common-form-element{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $trout-color;
+    background-color: $white-color;
+    background-clip: padding-box;
+    border: 1px solid $ghost-color;
+    border-radius: .25rem;
+    @include transition-element((border-color .15s ease-in-out, box-shadow .15s ease-in-out));
+}

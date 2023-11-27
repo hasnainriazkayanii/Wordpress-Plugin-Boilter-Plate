@@ -1,0 +1,273 @@
+/* 
+This file is used to contain all card scss.
+*/ 
+
+// this is card scss which is show on employee and admin dashboard
+.sb-main.employee-dashboard-section{
+
+    .dashboard-card {
+        position: relative;
+        height: 180px;
+    }
+
+    .dashboard-card-span {
+        @extend .dashboard-card-text;
+        font: normal normal normal 21px/19px Poppins;
+        letter-spacing: -0.63px;
+        color: $dashboard-card-span-color;
+    }
+
+    .dashboard-card-count {
+        @extend .dashboard-card-text;
+        font: normal normal 600 42px/35px Poppins;
+        letter-spacing: -1.26px;
+        color: $dashboard-card-count-color;
+    }
+
+    .dashboard-card-icon {
+        width: 50px;
+        height: 34px;
+        opacity: 1;
+    }
+
+    .dashboard-arrow-icon {
+        margin-top: -15px;
+        margin-left: 5px;
+    }
+
+}
+
+.sb-main.admin-dashboard-section{
+    @extend .sb-main.employee-dashboard-section;
+}
+
+.sb-main{
+
+    // scss for employee appointment detail 
+    .apt-detail-section{
+
+        .cardHeaderBackground {
+            background-color: $aqua-haze !important;
+        }
+
+        .adminHeadingColor {
+            color: $calypso-color;
+        }
+
+        .headertitleColor {
+            color: $hippie-blue !important;
+        }
+        
+        .lableColor {
+            color: $whiskey-color;
+        }
+    }
+
+    // card scss global
+    .card {
+        
+        padding: 0;
+        max-width: none;
+
+        .card-header {
+            padding: 0.2rem 1.25rem;
+        }
+    }
+    .SmartWpPlugin-sticky-notes,
+    .SmartWpPlugin-sticky-notes-item {
+      list-style: none;
+    }
+  
+    .SmartWpPlugin-sticky-notes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .SmartWpPlugin-attachment-link{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: blue;
+    }
+    #demo {
+      height:100%;
+      position:relative;
+      overflow:hidden;
+    }
+    
+      .SmartWpPlugin-attachment-thumb{
+            margin-bottom: 10px;
+            img.zoom {
+              width: 100%;
+              height: 200px;
+              border-radius:5px;
+              object-fit:cover;
+              -webkit-transition: all .3s ease-in-out;
+              -moz-transition: all .3s ease-in-out;
+              -o-transition: all .3s ease-in-out;
+              -ms-transition: all .3s ease-in-out;
+              &:hover{
+                -webkit-transform: scale(1.2); 
+                -moz-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                transform: scale(1.2);
+              }
+          }
+        }
+  
+    .SmartWpPlugin-sticky-notes
+      .SmartWpPlugin-sticky-notes-item
+      .SmartWpPlugin-sticky-notes-link {
+      text-decoration: none;
+      color: #000;
+      background: #ffc;
+      display: block;
+      height: 16em;
+      width: 16em;
+      padding: 1em;
+      box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+      transform: rotate(-6deg);
+      transition: transform 0.15s linear;
+    }
+  
+    .SmartWpPlugin-sticky-notes
+      .SmartWpPlugin-sticky-notes-item:nth-child(even)
+      .SmartWpPlugin-sticky-notes-link {
+      transform: rotate(4deg);
+      position: relative;
+      top: 5px;
+      background: #cfc;
+    }
+  
+    .SmartWpPlugin-sticky-notes
+      .SmartWpPlugin-sticky-notes-item:nth-child(3n)
+      .SmartWpPlugin-sticky-notes-link {
+      transform: rotate(-3deg);
+      position: relative;
+      top: -5px;
+      background: #ccf;
+    }
+  
+    .SmartWpPlugin-sticky-notes
+      .SmartWpPlugin-sticky-notes-item:nth-child(5n)
+      .SmartWpPlugin-sticky-notes-link {
+      transform: rotate(5deg);
+      position: relative;
+      top: -10px;
+    }
+  
+    .SmartWpPlugin-sticky-notes
+      .SmartWpPlugin-sticky-notes-item
+      .SmartWpPlugin-sticky-notes-link:hover,
+    .SmartWpPlugin-sticky-notes
+      .SmartWpPlugin-sticky-notes-item
+      .SmartWpPlugin-sticky-notes-link:focus {
+      box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
+      transform: scale(1.25);
+      position: relative;
+      z-index: 5;
+    }
+  
+    .SmartWpPlugin-sticky-notes .SmartWpPlugin-sticky-notes-item {
+      margin: 1em;
+    }
+  
+
+}
+
+.sb-section{
+
+    // card scss global
+    .card {
+        
+        padding: 0;
+        max-width: none;
+    }
+
+}
+
+
+
+section.sb-main.main-admin-setting-section .card {
+    min-height: 200px;
+
+}
+.sb-employee-appointment-detail{
+
+  .am-button-new {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 1000;
+  }
+
+  .am-button-new .el-button {
+    border-radius: 40px;
+    padding: 20px;
+    background-color: #1a84ee;
+    -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 2.4),
+      0 0 8px 0 rgba(0, 0, 0, 1.2);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 2.4), 0 0 8px 0 rgba(0, 0, 0, 1.2);
+  }
+
+  .el-button.el-button--primary {
+    color: #fff;
+    background-color: #1a84ee;
+    border-color: #1a84ee;
+  }
+
+  .el-button {
+    vertical-align: middle;
+  }
+
+  .am-wrap * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .el-button {
+    color: #7f8fa4;
+  }
+
+  .el-button--primary {
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+  }
+
+  .el-button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  .el-icon-plus:before {
+    content: "\E6D9";
+  }
+
+  .accordion-toggle:after {
+    font-family: "FontAwesome";
+    content: "\f078";
+    float: right;
+  }
+
+  .accordion-opened .accordion-toggle:after {
+    content: "\f054";
+  }
+}

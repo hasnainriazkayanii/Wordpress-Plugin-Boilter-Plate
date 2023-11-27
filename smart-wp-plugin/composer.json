@@ -1,0 +1,22 @@
+{
+    "name": "hasnain.riaz/smart-wp-plugin",
+    "description": "Smart WP Plugin Developed as Startup Plugin Template by Smart Is",
+    "license": "GL",
+    "authors": [{
+        "name": "Hasnain Riaz",
+        "email": "hasnain.riaz@smart-is.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "divineomega/dotenv-loader": "dev-master",
+        "rakit/validation": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmartWpPlugin\\": "./app"
+        },
+        "files": [
+            "./app/Helpers/helper.php"
+        ]
+    }
+}

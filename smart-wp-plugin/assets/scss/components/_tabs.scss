@@ -1,0 +1,73 @@
+/* 
+This file is used to contain all tabs related scss.
+*/
+
+.sb-main {
+    .nav-tabs {
+        float: left;
+        width: 100%;
+        margin: 0;
+        list-style-type: none;
+        border-bottom: 1px solid transparent;
+        li {
+            float: left;
+            margin-bottom: -1px;
+            a {
+                margin-right: 2px;
+                line-height: 1.5;
+                padding: 10px;
+                border: 1px solid transparent;
+                border-radius: 4px 4px 0 0;
+                float: left;
+                text-decoration: none;
+                &:hover {
+                    border-color: $gallery-color $gallery-color $alto-color;
+                }
+            }
+            &.active a {
+                color: $emperor-color;
+                cursor: default;
+                background-color: $white-color;
+                border-color: transparent;
+                &:hover,
+                &:focus {
+                    color: $emperor-color;
+                    cursor: default;
+                    background-color: $white-color;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+    .tab-content .tab-pane {
+        float: left;
+        width: 100%;
+        display: none;
+        &.active {
+            display: block;
+            padding: 10px;
+            background-color: $white-color;
+            @include box-shadow(0 0px 0px 0px rgba(0, 0, 0, 0.15));
+        }
+    }
+    .nav-tabs {
+        .nav-link {
+            box-shadow: 0 0 0 0px $primary, 0 0 0px 0px rgb(79, 148, 212);
+            color: $black-solid;
+            &:hover,
+            &:focus,
+            &:hover {
+                border-color:transparent;
+            }
+            &.active {
+                color: $azure-radiance;
+                box-shadow: 0 0 0 0px $primary, 0 0 0px 0px rgb(79, 148, 212);
+                border: 0px;
+                border-bottom: 3px solid $primary;
+            }
+        }
+        >li>a:hover {
+            border-color:transparent;
+        }
+    }
+}

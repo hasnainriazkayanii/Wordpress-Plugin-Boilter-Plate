@@ -1,0 +1,94 @@
+/* 
+This file is used to contain all variables.
+*/
+
+//variables
+//colors
+$albaster-color: #f7f7f7;
+$hippie-blue: #578BB4;
+$bermuda-gray:#7087A1;
+$black-solid: #000000;
+$rolling-stone: #717579;
+$woodsmoke: #171B1E;
+$orange-web: #FFA700;
+$heather-color: #B4BECE;
+$white-color: #FFFFFF;
+$seashell-color: #F1F1F1;
+$seashell-dark:#F2F2F2;
+$alto-color: #d6d6d6;
+$boulder-color: #757575;
+$athens-gray: #E2E6EC;
+$gray-solid: #808080;
+$link-water: #eceffa;
+$lilac-water: #F8F9FD;
+$blue-romance: #CFF6DD;
+$half-colonial-white: #FDF5DD;
+$shark-color: #212529;
+$nevada-color: #656D77;
+$aqua-haze: #EDF1F5;
+$calypso-color: #3C6C91;
+$whiskey-color: #f15a22;
+$whiskey-color-without-hash: f15a22;
+$whiskey-color-dark:#f15a22;
+$gray-text-color:#414042; 
+$trout-color: #495057;
+$ghost-color: #CED4DA;
+$mischka-color: #D2D6DE;
+$silver-chalice-color: #AAAAAA;
+$tundora-color: #444444;
+$shakespeare-color: #3E98D3;
+$tea-green: #D7F2C2;
+$gallery-color: #EEEEEE;
+$emperor-color: #555555;
+$alto-color: #DDDDDD;
+$geyser-color: #DEE2E6;
+$cornflower-blue: #6195ED;
+$waterloo: #6F7495;
+$port-gore: #222649;
+$tacao-color: #E9B47C;
+$mysticapprox-color: #e3e6f0;
+$downriver-approx: #092058;
+$dodger-blue-approx: #2196F3;
+$denim-approx: #1565C0;
+$supernova-approx: #FECC07;
+$havelock-blue: #4F94D4;
+$outer-space: #2D353C;
+$catskill-white: #ECF0F7;
+$porcelain-approx: #F0F3F4;
+$dusty-gray: #999999;
+$geyser-approx: #D9DFE3;
+$baltic-sea: #28272E;
+$gold-solid: #FFD700;
+$alto-approx: #D1D1D1;
+$azure-radiance: #0080FF;
+$alto-solid: #DBDBDB;
+$lynch-approx: #6D81A1;
+$black-a1: '#000000A1';
+$white-9e: '#FFFFFF9E';
+$pewter-blue: #99ABBF;
+$wage-wood:#517C9D;
+$shades-tints: #EBF0F5;
+$periwinkle:#D0DBEC;
+// button colors 
+$info: #17a2b8;
+$danger: #dc3545;
+$success: #28a745;
+$warning: #ffc107;
+$light: #f8f9fa;
+$secondary: #6c757d;
+$primary: #007bff;
+$light-yellow:#FFF6E5;
+// for creating own margin and padding classes
+$m_p_map: (0: 0, 1: 0.25rem, 2: 0.50rem, 3: 1rem, 4: 1.5rem, 5: 3rem, auto: auto);
+// for creating own border classes
+$b_list: ('', -bottom, -top, -left, -right);
+// for creating own button classes
+$button_badge_map: ((name: info, value: $info, color: $white-color), (name: danger, value: $danger, color: $white-color), (name: success, value: $success, color: $white-color), (name: warning, value: $warning, color: $black-solid), (name: primary, value: $primary, color: $white-color), (name: pewter-blue, value: $pewter-blue, color: $white-color),(name:whiskey-color,value:$whiskey-color,color:$white-color));
+// for creating own background and color classes
+$bg_color_map: (info: $info, danger: $danger, success: $success, warning: $warning, light: $light, secondary: $secondary, primary: $primary, white: $white-color, bermuda-gray:$bermuda-gray, wage-wood:$wage-wood, shades-tints:$shades-tints, calypso-color:$calypso-color,whiskey-color:$whiskey-color,black:$black-solid,dusty-gray:$dusty-gray,hippie-blue:$hippie-blue);
+$status_color_map:(
+    Pending: $warning,
+    Approved: $primary,
+    Rejected: $danger,
+    CheckedIn:$info,
+    Completed: $success);

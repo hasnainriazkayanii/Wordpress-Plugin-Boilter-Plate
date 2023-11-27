@@ -1,0 +1,14 @@
+/* 
+This file is used to contain all badge scss.
+*/ 
+.sb-main{
+
+    .badge {
+        padding: 0.5em 0.75em;
+    }
+    
+    .badge-success-alt {
+        background-color: $tea-green;
+        color: $success;
+    }
+}

@@ -1,0 +1,112 @@
+/* 
+This file is used to contain all button scss.
+*/
+
+// mixins for creating own button
+@include custom_button_badge_classes();
+// minus plus btn show on employee services
+.sb-main {
+    .minus-plus-btn {
+        flex: 0 0 auto;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        font-size: 24px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin: 0 10px;
+    }
+    .plus-btn {
+        margin-left: -20px;
+    }
+    i.customIcon {
+        border-radius: 50%;
+        border: 1px solid $athens-gray;
+        padding: 5px;
+        font-size: 10px;
+        &:focus {
+            @include box-shadow(0 0 0 0px $havelock-blue 0 0 0px 0px $havelock-blue !important);
+        }
+    }
+    .btn-icon {
+        background: $white-color;
+        .bx {
+            font-size: 20px;
+        }
+    }
+    .btn .bx {
+        vertical-align: middle;
+        font-size: 20px;
+    }
+    .icon>.bx {
+        display: block;
+        min-width: 1.5em;
+        min-height: 1.5em;
+        text-align: center;
+        font-size: 1.0625rem;
+    }
+    .btn {
+        font-size: 0.9375rem;
+        font-weight: 500;
+        padding: 0.5rem 0.75rem;
+    }
+    #x {
+        position: absolute;
+        background: $danger;
+        color: $white-color;
+        top: -10px;
+        right: -10px;
+    }
+}
+
+.sb-btn-brown {
+    background-color: $whiskey-color !important;
+    font-weight: $font-weight-semi-bold !important;
+    border: 1px solid $whiskey-color !important;
+    &:hover {
+        background-color: $whiskey-color !important;
+        color: $white-color !important;
+    }
+    
+}
+#SmartWpPlugin-appointment-calendar{
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.sb-btn-default {
+    background-color: $whiskey-color;
+    color: $white-color;
+    font-size: 16px;
+    border-radius: 5px !important;
+    &:hover {
+        background-color: $whiskey-color;
+        color: $white-color;
+    }
+}
+.sb-btn-shades-tint {
+    background-color: $shades-tints !important;
+    border-color: $shades-tints !important;
+    border-radius: 5px !important;
+    color:$black-solid  !important;
+    font-size: 16px;
+    &:hover{
+        background-color: $shades-tints !important;
+        border-color: $shades-tints !important;
+        color:$black-solid  !important
+    }
+}
+.sb-btn-light {
+    color: $downriver-approx !important;
+    background-color: #D8E1EF !important;
+    border-color: #7288AF !important;
+    font-family: '#{$poppins}',
+    sans-serif !important;
+    font-weight: 500 !important;
+    border: dotted !important;
+    border-radius: 5px;
+}
+a.btn.sb-btn-default.smarbooking-prev.slick-arrow {
+    z-index: 1;
+}
+a.btn.sb-btn-default.smarbooking-next.slick-arrow {
+    z-index: 1;
+}

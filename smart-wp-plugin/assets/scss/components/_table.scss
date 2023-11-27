@@ -1,0 +1,402 @@
+/* 
+This file is used to contain all tables scss.
+*/
+
+// all datatables scss
+.sb-main {
+    @media (max-width: 767px) {
+        div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+            -ms-flex-pack: center !important;
+            justify-content: center !important;
+            margin-top: 1rem;
+        }
+    }
+    .table-wrap {
+        overflow-x: scroll;
+    }
+    table.dataTable {
+        clear: both;
+        margin-top: 6px !important;
+        margin-bottom: 6px !important;
+        max-width: none !important;
+        border-collapse: collapse !important;
+        border-spacing: 0;
+    }
+    .dataTables_empty::before {
+        font-family: "FontAwesome";
+        font-weight: 400;
+        content: "\f1c0";
+        font-size: 3rem;
+        display: block;
+        padding: 10px;
+        color: $nevada-color !important;
+        margin-bottom: 10px;
+        opacity: 0.5;
+    }
+    table.dataTable {
+        margin-top: 12px !important;
+    }
+  
+    // table shown on employee dashboard
+    .main-dashboard-appointments {
+        @include box-shadow(0px 0px 0px 0px rgba(0, 0, 0, 0.29));
+    }
+    .dashboard-appointments {
+        min-width: 630px !important;
+        @include box-shadow(none);
+        thead {
+            tr {
+                border-bottom: none !important;
+            }
+            th {
+                font-size: 13px;
+                padding: 20px 10px;
+            }
+        }
+        tbody {
+            tr {
+                padding: 20px !important;
+            }
+            td {
+                padding: 10px;
+                font-size: 17px;
+                color: $dashboard-appointments-td-color;
+            }
+        }
+        .dashboard-appointments-heading {
+            font: normal normal 600 20px/24px $poppins;
+            letter-spacing: 0px;
+            color: $dashboard-appointments-heading-color;
+            opacity: 1;
+        }
+        .dashboard-table-tophead {
+            background: $aqua-haze 0% 0% no-repeat padding-box !important;
+            border-radius: 1px;
+            opacity: 0.9;
+            color: $dashboard-table-tophead-color !important;
+        }
+        .dashboard-appointments-datetime {
+            font: normal normal medium 14px/21px $poppins !important;
+            letter-spacing: 0px;
+            color: $dashboard-appointments-datetime-color;
+            background-color: $light-yellow;
+        }
+        .dashboard-appointments-customer {
+            font: normal normal 600 17px/21px $poppins !important;
+            letter-spacing: 0px;
+            color: $dashboard-appointments-customer-color !important;
+        }
+        .dashboard-appointments-select {
+            border: 1px solid $dashboard-appointments-select-color !important;
+            border-radius: 5px !important;
+            color: $dashboard-appointments-select-color !important;
+            opacity: 1 !important;
+            width: 70%;
+            padding: 5px;
+        }
+        .dashboard-appointment-detail-icon {
+            max-width: 10px;
+        }
+    }
+
+    .sb-table{
+        font-family: $poppins;
+        color: $black-solid;
+        font-weight:  $font-weight-medium;
+        select#apt-status {
+            padding: 3px;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .sb-table thead tr {
+        background: $white-color;
+        border-bottom: 4px solid $link-water;
+    }
+  
+   
+    .sb-table tbody th,
+    .sb-table tbody td {
+      
+        background: $white-color;
+        vertical-align: middle;
+    }
+    .sb-table thead th,
+    .sb-table tbody td {
+        padding: 1rem 2rem 1rem 2rem !important;
+    }
+    .sb-table thead th {
+        vertical-align: bottom;
+        background-color: $aqua-haze;
+        color:$rolling-stone;
+        border-bottom: 2px solid $mysticapprox-color;
+        font-size: 17px;
+        font-weight: $font-weight-regular;
+    }
+    .custom-select{
+        &-sm{
+            padding-left: 1rem;
+        }
+        &:focus{
+            box-shadow: 0 0 0 0 rgb(0, 0, 0);
+        }
+    }
+    .form-control:focus {
+        box-shadow: 0 0 0 0 rgb(0, 0, 0);
+    }
+    .dataTables_filter{
+        .form-control{
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB2ZXJzaW9uPSIxLjEiICAgaWQ9InN2ZzQ0ODUiICAgdmlld0JveD0iMCAwIDIxLjk5OTk5OSAyMS45OTk5OTkiICAgaGVpZ2h0PSIyMiIgICB3aWR0aD0iMjIiPiAgPGRlZnMgICAgIGlkPSJkZWZzNDQ4NyIgLz4gIDxtZXRhZGF0YSAgICAgaWQ9Im1ldGFkYXRhNDQ5MCI+ICAgIDxyZGY6UkRGPiAgICAgIDxjYzpXb3JrICAgICAgICAgcmRmOmFib3V0PSIiPiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+ICAgICAgICA8ZGM6dHlwZSAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4gICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPiAgICAgIDwvY2M6V29yaz4gICAgPC9yZGY6UkRGPiAgPC9tZXRhZGF0YT4gIDxnICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLC0xMDMwLjM2MjIpIiAgICAgaWQ9ImxheWVyMSI+ICAgIDxnICAgICAgIHN0eWxlPSJvcGFjaXR5OjAuNSIgICAgICAgaWQ9ImcxNyIgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAuNCw4NjYuMjQxMzQpIj4gICAgICA8cGF0aCAgICAgICAgIGlkPSJwYXRoMTkiICAgICAgICAgZD0ibSAtNTAuNSwxNzkuMSBjIC0yLjcsMCAtNC45LC0yLjIgLTQuOSwtNC45IDAsLTIuNyAyLjIsLTQuOSA0LjksLTQuOSAyLjcsMCA0LjksMi4yIDQuOSw0LjkgMCwyLjcgLTIuMiw0LjkgLTQuOSw0LjkgeiBtIDAsLTguOCBjIC0yLjIsMCAtMy45LDEuNyAtMy45LDMuOSAwLDIuMiAxLjcsMy45IDMuOSwzLjkgMi4yLDAgMy45LC0xLjcgMy45LC0zLjkgMCwtMi4yIC0xLjcsLTMuOSAtMy45LC0zLjkgeiIgICAgICAgICBjbGFzcz0ic3Q0IiAvPiAgICAgIDxyZWN0ICAgICAgICAgaWQ9InJlY3QyMSIgICAgICAgICBoZWlnaHQ9IjUiICAgICAgICAgd2lkdGg9IjAuODk5OTk5OTgiICAgICAgICAgY2xhc3M9InN0NCIgICAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjY5NjQsLTAuNzE3NiwwLjcxNzYsMC42OTY0LC0xNDIuMzkzOCwyMS41MDE1KSIgICAgICAgICB5PSIxNzYuNjAwMDEiICAgICAgICAgeD0iLTQ2LjIwMDAwMSIgLz4gICAgPC9nPiAgPC9nPjwvc3ZnPg==);
+            background-repeat: no-repeat;
+            background-color: #fff;
+            float: right;
+            background-position: 145px 3px !important;
+        }
+    }
+    .page-link:focus {
+        z-index: 3;
+        outline: 0;
+        box-shadow: 0 0 0 0;
+    }
+    .page-item.disabled .page-link {
+    
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .page-link {
+        color: $black-solid;
+        background-color: transparent;
+        border-color: transparent;
+        padding: 5px 20px 5px 20px
+    }
+    .page-item.active .page-link {
+        z-index: 3;
+        color: $white-color;
+        background-color: $black-solid;
+        border-color: $black-solid;
+    }
+}
+
+// invoice detail section 
+.sb-invoice-details {
+    @media screen and (max-width:1024px) {
+        .invoice-from,
+        .invoice-to {
+            padding-right: 0px !important;
+        }
+        .invoice-date {
+            text-align: left !important;
+            padding-left: 0px !important;
+        }
+        .invoice-date,
+        .invoice-from,
+        .invoice-to {
+            display: grid !important;
+            width: 100% !important;
+        }
+    }
+    .invoice {
+        background: $white-color;
+    }
+    .invoice-company {
+        font-size: 20px
+    }
+    .invoice-header {
+        margin: 0;
+        background: $catskill-white;
+        padding: 30px
+    }
+    .invoice-date,
+    .invoice-from,
+    .invoice-to {
+        display: table-cell;
+        width: 1%
+    }
+    .invoice-from,
+    .invoice-to {
+        padding-right: 20px
+    }
+    .invoice-date .date,
+    .invoice-from strong,
+    .invoice-to strong {
+        font-size: 16px;
+        font-weight: 600
+    }
+    .invoice-date {
+        text-align: right;
+        padding-left: 20px
+    }
+    .invoice-price {
+        background: $porcelain-approx;
+        display: table;
+        width: 100%
+    }
+    .invoice-price .invoice-price-left,
+    .invoice-price .invoice-price-right {
+        display: table-cell;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        width: 75%;
+        position: relative;
+        vertical-align: middle
+    }
+    .invoice-price .invoice-price-left .sub-price {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 20px
+    }
+    .invoice-price small {
+        font-size: 12px;
+        font-weight: 400;
+        display: block
+    }
+    .invoice-price .invoice-price-row {
+        display: table;
+        float: left
+    }
+    .invoice-price .invoice-price-right {
+        width: 25%;
+        background: $outer-space;
+        color: $white-color;
+        font-size: 28px;
+        text-align: right;
+        vertical-align: bottom;
+        font-weight: 300
+    }
+    .invoice-price .invoice-price-right small {
+        display: block;
+        opacity: .6;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 12px
+    }
+    .invoice-footer {
+        border-top: 1px solid $alto-color;
+        padding: 20px;
+        font-size: 10px
+    }
+    .invoice-note {
+        color: $dusty-gray;
+        margin-top: 80px;
+        font-size: 85%;
+        padding: 20px;
+    }
+    .btn.btn-white,
+    .btn.btn-white.disabled,
+    .btn.btn-white.disabled:focus,
+    .btn.btn-white.disabled:hover,
+    .btn.btn-white[disabled],
+    .btn.btn-white[disabled]:focus,
+    .btn.btn-white[disabled]:hover {
+        color: $outer-space;
+        background: $white-color;
+        border-color: $geyser-approx;
+    }
+    .sb-invoice-table th {
+        border-top: 0;
+        color: $port-gore;
+    }
+    .sb-table-service-name {
+        color: $calypso-color;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .sb-invoice-table-data {
+        color: $port-gore;
+    }
+    .sb-invoice-top-header {
+        background-color: $black-solid;
+        padding: 20px;
+    }
+    .invoice-content {
+        padding: 20px;
+    }
+    .sb-invoice-details-heading {
+        color: $hippie-blue;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .sb-invoice-details-content {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .sb-invoice-detail-section {
+        padding: 20px;
+    }
+}
+
+// appointment detail section
+.adminHeadingColor {
+    color: $calypso-color;
+}
+
+.cardHeaderBackground {
+    background-color: $aqua-haze !important;
+}
+
+.sb-table-header-color {
+    color: $rolling-stone !important;
+}
+
+.lableColor {
+    color: $whiskey-color;
+}
+
+.fa-star {
+    color: $gold-solid;
+}
+
+.sb-appointment-detail-label {
+    color: $black-solid;
+}
+
+.sb-appointment-detail-heading {
+    color: $hippie-blue;
+}
+
+.sb-appointment-detail-user-detail-heading {
+    color: $baltic-sea;
+}
+
+.sb-appointment-detail-section {
+    .sb-table thead th,
+    .sb-table tbody td {
+        padding: 0.75rem !important;
+    }
+    .sb-table tbody th,
+    .sb-table tbody td {
+        border: none;
+        padding: 30px;
+        background: $white-color;
+        vertical-align: middle;
+    }
+    .sb-table thead th,
+    .sb-table tbody td {
+        padding: 0.75rem !important;
+    }
+    .sb-table thead th {
+        vertical-align: bottom;
+        border-bottom: 0px solid $mysticapprox-color;
+    }
+    .sb-table td,
+    .sb-table th {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 0px solid $mysticapprox-color;
+    }
+    .sb-table th {
+        font-size: 14px;
+        color: $rolling-stone;
+    }
+    .sb-table tbody td {
+        background-color: $white-color;
+    }
+}
+
+.sb-invoice-details {
+    .sb-invoice-table td {
+        border-top: 0px solid $geyser-color;
+    }
+}

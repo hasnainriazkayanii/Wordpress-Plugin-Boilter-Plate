@@ -1,0 +1,128 @@
+/* 
+This file is used to contain all mixins.
+*/
+
+//mixins
+// this mixins is used for making own margin and padding classes
+@mixin margin_padding_classes($type, $val) {
+    @each $name,
+    $value in $m_p_map {
+        .sb-#{$type}-#{$name} {
+            #{$val}: $value;
+        }
+        .sb-#{$type}b-#{$name} {
+            #{$val}-bottom: $value;
+        }
+        .sb-#{$type}t-#{$name} {
+            #{$val}-top: $value;
+        }
+        .sb-#{$type}l-#{$name} {
+            #{$val}-left: $value;
+        }
+        .sb-#{$type}r-#{$name} {
+            #{$val}-right: $value;
+        }
+        .sb-#{$type}x-#{$name} {
+            #{$val}-left: $value;
+            #{$val}-right: $value;
+        }
+        .sb-#{$type}y-#{$name} {
+            #{$val}-top: $value;
+            #{$val}-bottom: $value;
+        }
+    }
+}
+
+// mixins used for adding box shadow
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+// mixins for create own border classes
+@mixin border_classes() {
+    @each $item in $b_list {
+        .sb-border#{$item} {
+            border#{$item}: 1px solid #dee2e6;
+        }
+        .sb-border#{$item}-0 {
+            border#{$item}: 0;
+        }
+    }
+}
+
+// mixins for setting background properties
+@mixin set-background-prop($size, $repeat, $postion) {
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $postion;
+}
+
+// mixins for creating own button class
+@mixin custom_button_badge_classes() {
+    @each $item in $button_badge_map {
+        .sb-btn-#{map-get($item, "name")} {
+            color: map-get($item, "color");
+            background-color: map-get($item, "value");
+            border-color: map-get($item, "value");
+        }
+        .sb-badge-#{map-get($item, "name")} {
+            color: map-get($item, "color");
+            background-color: map-get($item, "value");
+        }
+    }
+}
+@mixin status_classes() {
+    @each $name,
+    $value in $status_color_map {
+        .sb-status-#{$name} {
+            border-color: $value !important;
+        }
+        .sb-status-text-#{$name} {
+           color: $value !important;
+        }
+        
+    }
+}
+
+
+
+// mixins for creating own background classes
+@mixin custom_background_text_classes() {
+    @each $name,
+    $value in $bg_color_map {
+        .sb-bg-#{$name} {
+            background-color: $value;
+        }
+        .sb-text-#{$name} {
+            color: $value;
+        }
+       
+    }
+}
+
+// mixins for transition the element
+@mixin transition-element($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin SmartWpPlugin_font_weight() {
+    @each $name,
+    $value in $font-map {
+        .sb-font-weight-#{$name} {
+            font-weight: $value;
+        }
+    }
+}
+
+@mixin SmartWpPlugin_font_size() {
+    @for $i from 1 through 100 {
+        .sb-font-size-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+}

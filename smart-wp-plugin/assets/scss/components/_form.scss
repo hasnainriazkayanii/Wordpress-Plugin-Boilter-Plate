@@ -1,0 +1,295 @@
+/* 
+This file is used to contain all form element scss.
+*/ 
+
+.sb-main{
+    .sb-custom-form {
+
+        height: 100%;
+    
+        .sb-form-control {
+            @extend .common-form-element;
+        }
+    
+    
+        // select2 scss 
+        .sb-custom-form-select2{
+    
+            .select2-hidden-accessible {
+                border: 0 !important;
+                clip: rect(0 0 0 0) !important;
+                height: 1px !important;
+                margin: -1px !important;
+                overflow: hidden !important;
+                padding: 0 !important;
+                position: absolute !important;
+                width: 1px !important;
+            }
+            
+            .select2-container--default .select2-selection--single, .select2-selection .select2-selection--single {
+                border: 1px solid $mischka-color;
+                border-radius: 0;
+                padding: 6px 12px;
+                height: 34px;
+            }
+            
+            .select2-container--default .select2-selection--single {
+                background-color: $white-color;
+                border: 1px solid $silver-chalice-color;
+                border-radius: 4px;
+            }
+            
+            .select2-container .select2-selection--single {
+                box-sizing: border-box;
+                cursor: pointer;
+                display: block;
+                height: 28px;
+                user-select: none;
+                -webkit-user-select: none;
+            
+                .select2-selection__rendered {
+                padding-right: 10px;
+                padding-left: 0;
+                padding-right: 0;
+                height: auto;
+                margin-top: -3px;
+                }
+            }
+            
+            .select2-container--default .select2-selection--single {
+                .select2-selection__rendered {
+                color: $tundora-color;
+                line-height: 28px;
+                }
+            
+                border: 1px solid $mischka-color;
+                border-radius: 0 !important;
+                padding: 6px 12px;
+                height: 40px !important;
+            }
+            
+            .select2-selection .select2-selection--single {
+                border: 1px solid $mischka-color;
+                border-radius: 0 !important;
+                padding: 6px 12px;
+                height: 40px !important;
+            }
+            
+            .select2-container--default {
+                .select2-selection--single .select2-selection__arrow {
+                height: 26px;
+                position: absolute;
+                top: 6px !important;
+                right: 1px;
+                width: 20px;
+                }
+            
+                .select2-selection--multiple {
+                height: calc(2.25rem + 2px);
+            
+                .select2-selection__choice {
+                    float: left;
+                    margin-left: 5px;
+                    font-size: 14px;
+                    margin-top: 6px;
+                    padding: 0px 5px;
+                    padding-left: 21px;
+                }
+                }
+            }
+    
+        }
+    
+        label.error {
+            color: $danger;
+        }
+    
+        .ui-timepicker-wrapper {
+            width: 250px;
+        }
+    }
+    
+    .sb-switchToggle {
+        input[type=checkbox] {
+          height: 0;
+          width: 0;
+          visibility: hidden;
+          position: absolute;
+        }
+      
+        label {
+          cursor: pointer;
+          text-indent: -9999px;
+          width: 70px;
+          max-width: 70px;
+          height: 30px;
+          background: $alto-approx;
+          display: block;
+          border-radius: 100px;
+          position: relative;
+      
+          &:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 26px;
+            height: 26px;
+            background: $white-color;
+            border-radius: 90px;
+            transition: 0.3s;
+          }
+        }
+      
+        input {
+          &:checked {
+            + {
+              label, input + label {
+                background: $shakespeare-color;
+              }
+            }
+      
+            + {
+              label:before, input + label:before {
+                content: 'Yes';
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                width: 26px;
+                height: 26px;
+                border-radius: 90px;
+                transition: 0.3s;
+                text-indent: 0;
+                color: $white-color;
+              }
+      
+              label:after, input + label:after {
+                left: calc(100% - 2px);
+                transform: translateX(-100%);
+              }
+            }
+          }
+      
+          + {
+            label:before, input + label:before {
+              content: 'No';
+              position: absolute;
+              top: 5px;
+              left: 35px;
+              width: 26px;
+              height: 26px;
+              border-radius: 90px;
+              transition: 0.3s;
+              text-indent: 0;
+              color: $white-color;
+            }
+          }
+        }
+      
+        label:active:after {
+          width: 60px;
+        }
+      }
+      
+
+
+
+      .sb-switch-gateway {
+        label {
+          width: 90px;
+          max-width: 100px;
+        }
+        input {
+          &:checked {
+      
+            + {
+              label:before, input + label:before {
+                content: 'Enable';
+                top: 2px;
+              }
+            }
+          }
+      
+          + {
+            label:before, input + label:before {
+              content: 'Disable';
+              top: 2px;
+            }
+          }
+        }
+      
+        
+      }
+      
+      .toggle-switchArea {
+        margin: 10px 0 10px 0;
+      }
+
+      .dropdown-menu {
+            padding: 0.25rem 0;
+        }
+        
+      .dropdown-item {
+            padding: 0.5rem 1rem;
+        }
+      .error{
+        font-size: unset;
+        line-height: unset;
+        width: unset;
+      }
+      .SmartWpPlugin-nohover-rating{
+        border: none;
+        float:left;
+        &>[id^="SmartWpPlugin-nohover-star"] {
+          display: none;
+        }
+        &>label {
+          color: #ddd;
+          float: right;
+        }
+        &>label:before {
+          margin: 5px;
+          font-size: 2.25em;
+          font-family: FontAwesome;
+          display: inline-block;
+          content: "\f005"
+        }
+        &>.half:before {
+          content: "\f089";
+          position: absolute;
+        }
+        &>[id^="SmartWpPlugin-nohover-star"]:checked~label{
+          color: #FFD700;
+        }
+        
+      }
+      .SmartWpPlugin-myratings {
+        font-size: 85px;
+        color: green
+      }
+      .SmartWpPlugin-nohover-rating > label:before {
+        margin: 5px;
+        font-size: 1.25em;
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 0px;
+      }
+}
+
+.ui-timepicker-wrapper{
+  width: 18.5em !important;
+}
+.sb-employee-appointment-detail{
+  .SmartWpPlugin-nohover-rating > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "";
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+}
+
+  

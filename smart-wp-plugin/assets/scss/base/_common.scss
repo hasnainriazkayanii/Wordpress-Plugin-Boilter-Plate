@@ -1,0 +1,163 @@
+/* 
+This file is used to contain all common scss.
+*/
+
+.sb-section {
+    font-family: '#{$poppins}',
+    sans-serif;
+}
+
+//mixin  for making own margin classes
+@include margin_padding_classes(m, margin);
+//mixin  for making own padding classes
+@include margin_padding_classes(p, padding);
+//mixin  for making own border classes
+@include border_classes();
+//mixin  for making own background and text classes
+@include custom_background_text_classes();
+@include SmartWpPlugin_font_weight();
+@include SmartWpPlugin_font_size();
+@include status_classes();
+// font weight classes
+.sb-font-weight-regular {
+    font-weight: 400;
+}
+
+.sb-font-weight-medium {
+    font-weight: 500;
+}
+
+.sb-font-weight-semi-bold {
+    font-weight: 600;
+}
+
+.sb-font-weight-bold {
+    font-weight: 700;
+}
+
+.sb-status{
+    background: white;
+    border: 3px solid;
+    border-radius: 50%;
+    height: 16px;
+    width:16px;
+}
+
+.sb-option-status{
+    content: '';
+    display: inline-block;
+    background: white;
+    border: 3px solid;
+    border-radius: 50%;
+    height: 16px;
+    width:16px;
+}
+
+#SmartWpPlugin-preloader {
+    position: fixed;
+    left:0px;
+    top:0px;
+	width: 100%;
+	height: 100%;
+    z-index: 1100;
+    background-color:#0000008f;
+    #container {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #container h1 {
+        color: brown;
+        font-weight: 100;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    #inscription {
+        width: 13ch;
+        display: flex;
+    }
+    
+    #inscription i {
+        color: white;
+        padding-right: 0.3rem;
+        padding-left: 0.7rem;
+        font-family: monospace;
+        font-style: italic;
+    }
+    
+    #inscription span {
+        color: white;
+        font-family: monospace;
+        width: 4ch;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: slashes 4s steps(4) infinite;
+    }
+    
+    #rectangles {
+        align-self: center;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .rect {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 4px double $whiskey-color;
+        border-radius: 10px;
+        animation: spinner 3s ease-in-out infinite;
+    }
+    
+    .rect.q {
+        top: 0;
+        left: 0;
+        border-color: $whiskey-color;
+    }
+    .rect.w {
+        top: 0;
+        right: 0;
+        border-color: $black-solid;
+    }
+    .rect.e {
+        bottom: 0;
+        left: 0;
+        border-color: $black-solid;
+    }
+    .rect.r {
+        bottom: 0;
+        right: 0;
+        border-color: $whiskey-color;
+    }
+    
+    @keyframes spinner {
+        45% {
+            border-color: $black-solid;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        55% {
+            border-color:$whiskey-color ;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(1turn);
+        }
+        100% {
+            transform: rotate(1turn);
+        }
+    }
+    
+    @keyframes slashes {
+        0% {
+            width: 0;
+        }
+    }
+}
