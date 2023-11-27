@@ -78,7 +78,4 @@ Following is the list of Dependencies/Packages provided:
 | ------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------ |
 | divineomega/dotenv-loader      | [![Latest Version](https://img.shields.io/github/v/release/DivineOmega/dotenv-loader?label=Latest)](https://github.com/DivineOmega/dotenv-loader/releases/tag/v2.0.3)      | The dotenv-loader is a simple PHP helper that automatically loads in a .env file from the root of your project into environment variables. It is designed for use in projects that do not already make use of a .env file. |
 | rakit/validation          | [![Version](https://img.shields.io/github/v/release/rakit/validation?label=Latest&color=blue&style=flat-square)](https://github.com/rakit/validation/releases/tag/v1.0.0) | Rakit Validation - PHP Standalone Validation Library. Inspired by Illuminate\Validation Laravel.  |
-```
 
-Please replace the `[![Latest Version](...)](...)` and `[![Version](...)](...)` badges with the actual badge URLs from the respective repositories.
-```
