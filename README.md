@@ -63,9 +63,7 @@ The project follows a modular directory structure for better organization. Here 
 
 The project uses Composer for dependency management. The `composer.json` file contains the necessary information about the project dependencies. To install the dependencies, run:
 
-```bash
-composer install
-
+```bash composer install
 
 ### Composer Dependencies
 
