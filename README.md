@@ -1,6 +1,3 @@
-Certainly! Here's the converted markdown suitable for GitHub README:
-
-```markdown
 # Smart WP Plugin WordPress Plugin Boilerplate DevOps Documentation
 
 ## Table of Contents
@@ -68,7 +65,7 @@ The project uses Composer for dependency management. The `composer.json` file co
 
 ```bash
 composer install
-```
+
 
 ### Composer Dependencies
 
